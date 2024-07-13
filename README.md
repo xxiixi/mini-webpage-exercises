@@ -2,22 +2,22 @@
 
 [toc]
 
-## 1-Introduction & Setup
+# 1-Introduction & Setup
 
-### Some Shortcuts
+## Some Shortcuts
 
 - Use `H1.myclass` for classes and `H1#myids` for ids
 - `div\*3` gives you three divs
 - link to javascript: typing `script:src`
 
-### Useful plug-in
+## Useful plug-in
 
 - Live server
 - Auto Rename Tag
 - Bracket Pair Color DLW
 - Prettier - Code formatter
 
-### Front
+## Front
 
 - <a>https://fontawesome.com/</a>
 
@@ -27,7 +27,7 @@
   - go to https://fonts.google.com/ and find the font style **Roboto**
   - select @import and copy to style.css
 
-### starter css
+## starter css
 
 以下是这些 CSS 属性的中文讲解：
 
@@ -61,7 +61,7 @@ body {
 - `overflow: hidden` 隐藏任何超出 `body` 元素边界的内容。
 - `margin: 0` 将 `body` 元素的外边距设为 0，去除默认的外边距。
 
-#### 1. box-sizing
+### 1. box-sizing
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
 
@@ -77,13 +77,13 @@ CSSCopy to Clipboard
 
 这使得处理元素大小的工作变得容易得多，并且通常消除了在布局内容时可能遇到的许多陷阱。然而，在某些情况下，你应谨慎使用这个属性。例如：你正在编写一个将由其他人使用的共享组件库，如果他们网站的其余部分没有设置此值，他们可能会发现很难使用你的组件库。
 
-#### 2. display
+### 2. display
 
 `display: flex;`
 
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/display
 
-#### 3. margin
+### 3. margin
 
 `margin: 0; `
 
@@ -91,13 +91,13 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin
 
 上下左右外边距属性
 
-#### 4. flex-direction
+### 4. flex-direction
 
 `flex-direction: column;`
 
 **`flex-direction`** 属性指定了内部元素是如何在弹性容器中布局的，定义了主轴的方向（正方向或反方向）。
 
-#### 5. justify-content
+### 5. justify-content
 
 `justify-content: center;`
 
@@ -105,13 +105,13 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin
 
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content
 
-#### 6. height
+### 6. height
 
 `height: 100vh;`
 
 `100vh`中的`vh`是表示视口高度的一个单位，`vh`的意思是`viewport height`，即视口高度的百分之一。`100vh`表示的是视口高度的100%，也就是整个视口的高度。
 
-#### 7. overflow
+### 7. overflow
 
 `overflow: hidden;`
 
@@ -119,16 +119,16 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content
 
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow
 
-### css单位 🌟
+## css单位 🌟
 
-#### Viewport Units - 视口单位
+### Viewport Units - 视口单位
 
 - `vw` (viewport width): 视口宽度的百分之一。
 - `vh` (viewport height): 视口高度的百分之一。
 - `vmin`(viewport minimum): 视口宽度和高度中较小的那个的百分之一。
 - `vmax`(viewport maximum): 视口宽度和高度中较大的那个的百分之一。
 
-#### Absolute Length Units - 绝对长度单位
+### Absolute Length Units - 绝对长度单位
 
 - `px` (像素 pixels): 屏幕上的一个物理点。
 - `cm` (厘米 centimeters): 物理长度单位。
@@ -137,7 +137,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow
 - `pt` (点 points): 1点等于1/72英寸。
 - `pc` (派卡 picas): 1派卡等于12点。
 
-#### Relative Length Units - 相对长度单位
+### Relative Length Units - 相对长度单位
 
 - `%` (百分比 percent): 相对于父元素的大小。
 - `em`(em): 相对于当前元素的字体大小。
@@ -147,14 +147,28 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow
 - `lh`(line height): 当前元素行高的倍数。
 - `vw`, `vh`, `vmin`, `vmax`: 视口的相对单位。
 
-#### 时间单位
+### 时间单位
 
 - `s` (秒 seconds): 时间单位。
 - `ms` (毫秒 milliseconds): 时间单位，1毫秒等于1/1000秒。
 
-#### 角度单位
+### 角度单位
 
 - `deg` (度 degrees): 角度单位。
 - `grad` (梯度 gradians): 角度单位，1梯度等于0.9度。
 - `rad` (弧度 radians): 角度单位。
 - `turn` (圈 turns): 角度单位，1圈等于360度。
+
+# 2-Expanding Cards
+
+## flex
+
+此属性是以下 CSS 属性的简写：
+
+- [`flex-grow`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-grow)
+- [`flex-shrink`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-shrink)
+- [`flex-basis`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-basis)
+
+## :nth-of-type
+
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/:nth-of-type
