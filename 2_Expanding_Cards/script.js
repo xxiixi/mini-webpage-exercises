@@ -6,7 +6,7 @@ panels.forEach((panel) => {
     panel.addEventListener('click',() => {
         // 1. remove the active class
         removeActiveClasses();
-        // 
+        // 2. add a new class name
         panel.classList.add('active')
 
     })
