@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif; 
-    /* 设置字体为Roboto，如果找不到Roboto字体，则回退使用系统默认的无衬线字体。*/
-    display: flex;
-    /* 设置布局为弹性盒模型，这允许你使用下面的flex属性来定义子元素的布局。*/
-    flex-direction: column;
-    /* 置弹性容器内元素的排列方向为垂直方向（从上到下）。 */
-    align-items: center;
-    /* 在水平方向上将子元素居中对齐。 */
-    justify-content: center;
-    /* 在垂直方向上将子元素居中对齐。 */
-    height: 100vh;
-    /* 设置元素的高度为视口高度的100%，即使元素的高度与浏览器窗口的高度一致。 */
-    overflow: hidden;
-    /* 设置溢出内容为隐藏，即如果子元素的大小超过了父元素，那么超出的部分将不会显示。 */
-    margin: 0; 
-    /* 设置元素的外边距为0，去除默认的外边距。 */
+  font-family: 'Roboto', sans-serif;
+  /* 设置字体为Roboto，如果找不到Roboto字体，则回退使用系统默认的无衬线字体。*/
+  display: flex;
+  /* 设置布局为弹性盒模型，这允许你使用下面的flex属性来定义子元素的布局。*/
+  flex-direction: column;
+  /* 置弹性容器内元素的排列方向为垂直方向（从上到下）。 */
+  align-items: center;
+  /* 在水平方向上将子元素居中对齐。 */
+  justify-content: center;
+  /* 在垂直方向上将子元素居中对齐。 */
+  height: 100vh;
+  /* 设置元素的高度为视口高度的100%，即使元素的高度与浏览器窗口的高度一致。 */
+  overflow: hidden;
+  /* 设置溢出内容为隐藏，即如果子元素的大小超过了父元素，那么超出的部分将不会显示。 */
+  margin: 0;
+  /* 设置元素的外边距为0，去除默认的外边距。 */
 }
