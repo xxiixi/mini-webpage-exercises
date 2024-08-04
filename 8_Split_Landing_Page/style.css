@@ -1,24 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+  --left-bg-color: rgba(142, 84, 236, 0.7);
+  --right-bg-color: rgba(236, 183, 84, 0.7);
+  --left-btn-hover-color: rgb(172, 135, 231);
+  --right-btn-hover-color: rgb(228, 195, 135);
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  /* 设置字体为Roboto，如果找不到Roboto字体，则回退使用系统默认的无衬线字体。*/
-  display: flex;
-  /* 设置布局为弹性盒模型，这允许你使用下面的flex属性来定义子元素的布局。*/
-  flex-direction: column;
-  /* 置弹性容器内元素的排列方向为垂直方向（从上到下）。 */
-  align-items: center;
-  /* 在水平方向上将子元素居中对齐。 */
-  justify-content: center;
-  /* 在垂直方向上将子元素居中对齐。 */
   height: 100vh;
-  /* 设置元素的高度为视口高度的100%，即使元素的高度与浏览器窗口的高度一致。 */
   overflow: hidden;
-  /* 设置溢出内容为隐藏，即如果子元素的大小超过了父元素，那么超出的部分将不会显示。 */
   margin: 0;
-  /* 设置元素的外边距为0，去除默认的外边距。 */
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  /* 将h1左边缘设置在其父元素宽度的50%的位置 */
+  top: 20%;
+  transform: translateX(-50%);
+  /* 将<h1>标签向左移动自己宽度的50%。这与left: 50%;结合使用，实际上是使<h1>标签在水平方向上居中于其父元素 */
+  white-space: nowrap;
+  /* 文本不会自动换行，即使文本超出了元素的宽度，也会在一行内显示 */
+}
+
+.btn {
+  position: absolute;
+  /* 将按钮设置为绝对定位，这意味着按钮将基于其最近的已定位的父元素进行定位。 */
+  display: flex;
+  /* 使用弹性盒子模型来显示按钮的内容，这有助于内部元素（如文字或图标）的布局。 */
+  align-items: center;
+  /* 在弹性容器内垂直居中对齐子元素（如果按钮内部有其他元素的话）。 */
+  justify-content: center;
+  /* 在弹性容器内水平居中对齐子元素，确保按钮的文字或图标在水平方向上居中。 */
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  /* 移除按钮文本的下划线，这常用于移除链接的默认下划线。 */
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 15rem;
+  padding: 1.5rem;
+  /* 在按钮内部四周添加1.5 rem的填充。 */
+}
+
+.split.left .btn:hover {
+  background-color: var(--left-btn-hover-color);
+  border-color: var(--left-btn-hover-color);
+}
+
+.split.right .btn:hover {
+  background-color: var(--right-btn-hover-color);
+  border-color: var(--right-btn-hover-color);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  background: url('./Trina.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.left::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--left-bg-color);
+}
+
+.split.right {
+  right: 0;
+  background: url('./Marika.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--right-bg-color);
 }
